@@ -1,0 +1,195 @@
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    height: 100vh;
+    color: #002147;
+    /* Probablement changer ça avec Js */
+}
+
+
+
+#mainApp{
+    height: 90%;
+    margin: 50px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px #333;
+    background-color: #d8dff5;
+    display: flex;
+}
+
+#user{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#user1, #user2, #user3{
+    width: 100%;
+}
+
+#user1{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid #bbc3e3;
+}
+
+#imgUser{
+    background-color: white;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+
+#nameUser{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#nameUser span:nth-child(1){
+    font-size: 40px;
+    /* font-family: ; */
+    font-weight: bold;
+}
+
+#nameUser span:nth-child(2){
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+#user2{
+    flex-grow: 3;
+    border-bottom: 1px solid #bbc3e3;
+}
+
+#user2 ul{
+    list-style: none;
+    margin: 50px 20px;
+}
+
+#user2 ul li{
+    margin: 20px 50px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#user3{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#user3 button, #app #addTodo button{
+    background-color: #002147;
+    color: white;
+    width: 130px;
+    height: 60px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+#user3 button a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#user3 a{
+    font-size: 20px;
+    color: #002147;
+    font-weight: 500;
+}
+
+#app{
+    height: 100%;
+    width: 70%;
+    border-radius: 4px;
+    box-shadow: 0px 0px 2px #333;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#app h1{
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 10px;
+}
+
+#app #addTodo{
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+}
+
+#app #addTodo input{
+    width: 600px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: #bbc3e3;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 50px;
+    padding-left: 20px;
+}
+
+#app #addTodo button{
+    font-size: 20px;
+}
+
+#app #mainList{
+    /* flex-grow: 5; */
+    width: 1000px;
+}
+
+#app #mainList h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#list{
+    height: 600px;
+}
+
+#list ul{
+    height: 100%;
+    list-style: none;
+}
+
+#list ul li{
+    margin-bottom: 20px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    box-shadow: 0px 0px 4px #00214749;    
+}
+
+#list ul li input{
+    width: 25px;
+}
+
+#list ul li button{
+    width: 100px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    box-shadow: 0px 0px 4px #00214749;
+    border-radius: 4px;
+}
